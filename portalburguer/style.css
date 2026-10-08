@@ -1,0 +1,466 @@
+
+/* ==================================================
+   RESET
+================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==================================================
+   BODY
+================================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffaf3;
+    color: #2b1d1d;
+}
+
+
+/* ==================================================
+   CABEÇALHO
+================================================== */
+
+header {
+    background-color: #d81b4a;
+    color: white;
+
+    padding: 18px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 10px 15px;
+
+    background-color: #a3163a;
+    border-radius: 8px;
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+    background-color: #f5e9d8;
+
+    padding: 55px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero h1 {
+    color: #d81b4a;
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    margin-bottom: 22px;
+    font-size: 17px;
+}
+
+
+/* ==================================================
+   BOTÃO
+================================================== */
+
+.botao {
+    background-color: #d81b4a;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 13px 25px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* ==================================================
+   PAINEL PRINCIPAL
+================================================== */
+
+.painel {
+    width: 92%;
+    max-width: 1400px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border: 2px solid #d81b4a;
+    border-radius: 20px;
+
+    display: flex;
+
+    gap: 35px;
+
+    box-shadow: 0 5px 15px rgba(43, 29, 29, 0.12);
+}
+
+
+/* ==================================================
+   PROMOÇÕES
+   LADO ESQUERDO
+================================================== */
+
+.promo {
+    width: 270px;
+
+    flex-shrink: 0;
+
+    background-color: #f5e9d8;
+
+    padding: 25px;
+
+    border-radius: 15px;
+}
+
+.promo h2 {
+    color: #d81b4a;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    font-size: 26px;
+}
+
+
+/* LISTA DE PROMOÇÕES */
+
+.lista-promo {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* PROMOÇÃO */
+
+.promo-item {
+    background-color: #a3163a;
+
+    color: white;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    line-height: 1.4;
+}
+
+
+/* ==================================================
+   CARDÁPIO
+   LADO DIREITO
+================================================== */
+
+.cardapio {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.cardapio h2 {
+    color: #d81b4a;
+
+    font-size: 32px;
+
+    margin-bottom: 25px;
+
+    text-align: center;
+}
+
+
+/* LISTA DOS CARDS */
+
+.lista-cards {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+
+    gap: 20px;
+}
+
+
+/* ==================================================
+   CARDS DO CARDÁPIO
+================================================== */
+
+.card {
+    background-color: #fffaf3;
+
+    border: 2px solid #d81b4a;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    /*
+       Faz os cards ocuparem espaço
+       sem ficarem pequenos demais.
+    */
+    flex: 1 1 230px;
+
+    min-height: 240px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+.card .emoji {
+    font-size: 55px;
+
+    margin-bottom: 8px;
+}
+
+.card h3 {
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+.card p {
+    line-height: 1.4;
+}
+
+.card .preco {
+    color: #d81b4a;
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    margin-top: 12px;
+}
+
+
+/* ==================================================
+   FAÇA SEU PEDIDO
+================================================== */
+
+.pedido {
+    width: 92%;
+    max-width: 1400px;
+
+    margin: 0 auto 40px;
+
+    padding: 40px;
+
+    background-color: white;
+
+    border: 2px solid #d81b4a;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(43, 29, 29, 0.12);
+}
+
+.pedido h2 {
+    color: #d81b4a;
+
+    font-size: 32px;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+
+
+/* ==================================================
+   CAMPOS DO FORMULÁRIO
+================================================== */
+
+.campo {
+    margin-bottom: 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.campo label {
+    font-weight: bold;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 2px solid #d81b4a;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    background-color: #fffaf3;
+}
+
+
+/* ==================================================
+   RODAPÉ
+================================================== */
+
+footer {
+    background-color: #2b1d1d;
+
+    color: white;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 15px;
+
+    text-align: center;
+}
+
+
+/* REDES */
+
+.redes {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+.redes span {
+    background-color: #d81b4a;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+}
+
+
+/* ==================================================
+   RESPONSIVIDADE
+================================================== */
+
+@media (max-width: 900px) {
+
+    .painel {
+        flex-direction: column;
+    }
+
+    .promo {
+        width: 100%;
+    }
+
+    .lista-promo {
+        flex-direction: row;
+
+        flex-wrap: wrap;
+    }
+
+    .promo-item {
+        flex: 1 1 200px;
+    }
+
+    .lista-cards {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .painel {
+        width: 95%;
+
+        padding: 18px;
+    }
+
+    .lista-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .pedido {
+        width: 95%;
+
+        padding: 25px;
+    }
+}
